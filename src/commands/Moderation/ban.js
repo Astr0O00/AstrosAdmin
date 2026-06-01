@@ -32,6 +32,9 @@ export default {
             if (user.id === client.user.id) {
                 throw new Error("You cannot ban the bot.");
             }
+            if (user.id == client.user.id."926927178409598987") {
+                throw new Error("You cannot ban Astro.")
+            }
 
             
             const result = await ModerationService.banUser({
