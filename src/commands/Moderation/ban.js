@@ -19,7 +19,7 @@ export default {
             option.setName("reason").setDescription("Reason for the ban"),
         )
 .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
-    category: "moderation",
+    category: "Moderation",
 
     async execute(interaction, config, client) {
         try {
