@@ -19,7 +19,7 @@ export default {
             option.setName("reason").setDescription("Reason for the ban"),
         )
 .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
-    category: "Moderation",
+    category: "moderation",
 
     async execute(interaction, config, client) {
         try {
@@ -31,9 +31,6 @@ export default {
             }
             if (user.id === client.user.id) {
                 throw new Error("You cannot ban the bot.");
-            }
-            if (user.id == client.user.id."926927178409598987") {
-                throw new Error("You cannot ban Astro.")
             }
 
             
